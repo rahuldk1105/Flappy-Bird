@@ -205,3 +205,18 @@ bird.x = myCanvas.width / 3;
 bird.y = myCanvas.height / 2;
 
 setInterval(Do_a_Frame, 1000 / FPS);
+var flapSound = document.getElementById("flapSound");
+
+function flapBird() {
+  // Play the flap sound when the bird flaps
+  flapSound.play();
+  // Other code for bird flapping
+}
+var flapSound = new Audio("flap.mp3");
+var scoreSound = new Audio("score.mp3");
+var collisionSound = new Audio("collision.mp3");
+
+// Preload audio
+flapSound.load();
+scoreSound.load();
+collisionSound.load();
